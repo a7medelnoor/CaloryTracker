@@ -10,11 +10,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import com.plcoding.core_ui.LocalSpacing
+import kotlin.reflect.KFunction0
 
 @Composable
 fun ActionButton(
     text: String,
-    onClick: () -> Unit,
+    onClick: KFunction0<Unit>,
     modifier: Modifier = Modifier,
     isEnabled: Boolean = true,
     textStyle: TextStyle = MaterialTheme.typography.button
